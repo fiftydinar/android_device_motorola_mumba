@@ -145,6 +145,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MotoEuicc
 
+# Empty microG companion used by apps that only check for the Play Store package.
+PRODUCT_PACKAGES += FakeStore
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
