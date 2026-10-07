@@ -1,7 +1,15 @@
 android_app_import {
     name: "FakeStore",
     apk: "FakeStore.apk",
+    filename: "Phonesky.apk",
+    relative_install_path: "Phonesky",
+    install_path_skip_module_dir: true,
     presigned: true,
     preprocessed: true,
+    skip_preprocessed_apk_checks: true,
+    privileged: true,
     product_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
 }

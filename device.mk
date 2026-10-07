@@ -145,8 +145,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MotoEuicc
 
-# Empty microG companion used by apps that only check for the Play Store package.
+# MindTheGapps supplies real Phonesky when GApps are built into the ROM.
+ifneq ($(WITH_GMS),true)
 PRODUCT_PACKAGES += FakeStore
+endif
 
 # DRM
 PRODUCT_PACKAGES += \
